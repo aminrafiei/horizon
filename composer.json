@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Horizon\\": "src/"
+            "Aminrafiei\\Horizon\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Horizon\\Tests\\": "tests/"
+            "Aminrafiei\\Horizon\\Tests\\": "tests/"
         }
     },
     "extra": {
