@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Jobs;
+namespace Aminrafiei\Horizon\Jobs;
 
-use Laravel\Horizon\JobId;
-use Laravel\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\JobId;
+use Aminrafiei\Horizon\Contracts\JobRepository;
 use Illuminate\Contracts\Queue\Factory as Queue;
 
 class RetryFailedJob
@@ -30,7 +30,7 @@ class RetryFailedJob
      * Execute the job.
      *
      * @param  \Illuminate\Contracts\Queue\Factory  $queue
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Aminrafiei\Horizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function handle(Queue $queue, JobRepository $jobs)

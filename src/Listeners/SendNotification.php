@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Aminrafiei\Horizon\Listeners;
 
-use Laravel\Horizon\Lock;
-use Laravel\Horizon\Horizon;
+use Aminrafiei\Horizon\Lock;
+use Aminrafiei\Horizon\Horizon;
 use Illuminate\Support\Facades\Notification;
 
 class SendNotification

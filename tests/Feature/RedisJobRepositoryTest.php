@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Aminrafiei\Horizon\Tests\Feature;
 
 use Exception;
-use Laravel\Horizon\JobPayload;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\JobPayload;
+use Aminrafiei\Horizon\Tests\IntegrationTest;
+use Aminrafiei\Horizon\Contracts\JobRepository;
 
 class RedisJobRepositoryTest extends IntegrationTest
 {

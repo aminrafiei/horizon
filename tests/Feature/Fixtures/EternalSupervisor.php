@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fixtures;
+namespace Aminrafiei\Horizon\Tests\Feature\Fixtures;
 
 class EternalSupervisor
 {

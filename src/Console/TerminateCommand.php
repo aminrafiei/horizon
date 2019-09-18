@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Aminrafiei\Horizon\Console;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use Laravel\Horizon\MasterSupervisor;
+use Aminrafiei\Horizon\MasterSupervisor;
 use Illuminate\Support\InteractsWithTime;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 
 class TerminateCommand extends Command
 {
@@ -33,7 +33,7 @@ class TerminateCommand extends Command
      * Execute the console command.
      *
      * @param  \Illuminate\Contracts\Cache\Factory $cache
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Aminrafiei\Horizon\Contracts\MasterSupervisorRepository  $masters
      * @return void
      */
     public function handle(CacheFactory $cache, MasterSupervisorRepository $masters)

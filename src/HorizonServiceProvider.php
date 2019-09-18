@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Aminrafiei\Horizon;
 
 use Illuminate\Queue\QueueManager;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Events\Dispatcher;
-use Laravel\Horizon\Connectors\RedisConnector;
+use Aminrafiei\Horizon\Connectors\RedisConnector;
 
 class HorizonServiceProvider extends ServiceProvider
 {
@@ -50,7 +50,7 @@ class HorizonServiceProvider extends ServiceProvider
     {
         Route::group([
             'prefix' => 'horizon',
-            'namespace' => 'Laravel\Horizon\Http\Controllers',
+            'namespace' => 'Aminrafiei\Horizon\Http\Controllers',
             'middleware' => config('horizon.middleware', 'web'),
         ], function () {
             $this->loadRoutesFrom(__DIR__.'/../routes/web.php');

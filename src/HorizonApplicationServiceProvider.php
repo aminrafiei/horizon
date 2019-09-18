@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Aminrafiei\Horizon;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Aminrafiei\Horizon\Repositories;
 
 use Illuminate\Support\Str;
-use Laravel\Horizon\WaitTimeCalculator;
-use Laravel\Horizon\Contracts\WorkloadRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\WaitTimeCalculator;
+use Aminrafiei\Horizon\Contracts\WorkloadRepository;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
 use Illuminate\Contracts\Queue\Factory as QueueFactory;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 
 class RedisWorkloadRepository implements WorkloadRepository
 {
@@ -21,21 +21,21 @@ class RedisWorkloadRepository implements WorkloadRepository
     /**
      * The wait time calculator instance.
      *
-     * @var \Laravel\Horizon\WaitTimeCalculator
+     * @var \Aminrafiei\Horizon\WaitTimeCalculator
      */
     public $waitTime;
 
     /**
      * The master supervisor repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\MasterSupervisorRepository
+     * @var \Aminrafiei\Horizon\Contracts\MasterSupervisorRepository
      */
     private $masters;
 
     /**
      * The supervisor repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\SupervisorRepository
+     * @var \Aminrafiei\Horizon\Contracts\SupervisorRepository
      */
     private $supervisors;
 
@@ -43,9 +43,9 @@ class RedisWorkloadRepository implements WorkloadRepository
      * Create a new repository instance.
      *
      * @param  \Illuminate\Contracts\Queue\Factory  $queue
-     * @param  \Laravel\Horizon\WaitTimeCalculator  $waitTime
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Aminrafiei\Horizon\WaitTimeCalculator  $waitTime
+     * @param  \Aminrafiei\Horizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Aminrafiei\Horizon\Contracts\SupervisorRepository  $supervisors
      * @return void
      */
     public function __construct(QueueFactory $queue, WaitTimeCalculator $waitTime,

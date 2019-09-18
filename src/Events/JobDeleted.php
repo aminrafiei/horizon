@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Aminrafiei\Horizon\Events;
 
 class JobDeleted extends RedisEvent
 {

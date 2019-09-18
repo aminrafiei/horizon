@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Aminrafiei\Horizon\Console;
 
 use Exception;
 use Illuminate\Console\Command;
-use Laravel\Horizon\SupervisorFactory;
-use Laravel\Horizon\SupervisorOptions;
+use Aminrafiei\Horizon\SupervisorFactory;
+use Aminrafiei\Horizon\SupervisorOptions;
 
 class SupervisorCommand extends Command
 {
@@ -46,7 +46,7 @@ class SupervisorCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\SupervisorFactory  $factory
+     * @param  \Aminrafiei\Horizon\SupervisorFactory  $factory
      * @return int
      */
     public function handle(SupervisorFactory $factory)
@@ -69,7 +69,7 @@ class SupervisorCommand extends Command
     /**
      * Start the given supervisor.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Aminrafiei\Horizon\Supervisor  $supervisor
      * @return void
      */
     protected function start($supervisor)
@@ -90,7 +90,7 @@ class SupervisorCommand extends Command
     /**
      * Get the supervisor options.
      *
-     * @return \Laravel\Horizon\SupervisorOptions
+     * @return \Aminrafiei\Horizon\SupervisorOptions
      */
     protected function supervisorOptions()
     {

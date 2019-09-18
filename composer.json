@@ -1,12 +1,12 @@
 {
-    "name": "laravel/horizon",
+    "name": "aminrafiei/horizon",
     "description": "Dashboard and code-driven configuration for Laravel queues.",
-    "keywords": ["laravel", "queue"],
+    "keywords": ["horizon", "queue"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
+            "name": "Amin Rafiei",
+            "email": "amin.amin111@yahoo.com"
         }
     ],
     "require": {
@@ -43,10 +43,10 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Horizon\\HorizonServiceProvider"
+                "Aminrafiei\\Horizon\\HorizonServiceProvider"
             ],
             "aliases": {
-                "Horizon": "Laravel\\Horizon\\Horizon"
+                "Horizon": "Aminrafiei\\Horizon\\Horizon"
             }
         }
     },

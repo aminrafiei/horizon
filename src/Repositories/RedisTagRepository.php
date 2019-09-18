@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Aminrafiei\Horizon\Repositories;
 
-use Laravel\Horizon\Contracts\TagRepository;
+use Aminrafiei\Horizon\Contracts\TagRepository;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 
 class RedisTagRepository implements TagRepository

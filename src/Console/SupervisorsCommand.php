@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Aminrafiei\Horizon\Console;
 
 use Illuminate\Console\Command;
-use Laravel\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
 
 class SupervisorsCommand extends Command
 {
@@ -24,7 +24,7 @@ class SupervisorsCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Aminrafiei\Horizon\Contracts\SupervisorRepository  $supervisors
      * @return void
      */
     public function handle(SupervisorRepository $supervisors)

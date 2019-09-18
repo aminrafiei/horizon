@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Aminrafiei\Horizon\Http\Controllers;
 
-use Laravel\Horizon\WaitTimeCalculator;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\WaitTimeCalculator;
+use Aminrafiei\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\Contracts\MetricsRepository;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 
 class DashboardStatsController extends Controller
 {

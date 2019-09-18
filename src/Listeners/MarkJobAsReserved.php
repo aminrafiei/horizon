@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Aminrafiei\Horizon\Listeners;
 
-use Laravel\Horizon\Events\JobReserved;
-use Laravel\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\Events\JobReserved;
+use Aminrafiei\Horizon\Contracts\JobRepository;
 
 class MarkJobAsReserved
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Aminrafiei\Horizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Aminrafiei\Horizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function __construct(JobRepository $jobs)
@@ -28,7 +28,7 @@ class MarkJobAsReserved
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobReserved  $event
+     * @param  \Aminrafiei\Horizon\Events\JobReserved  $event
      * @return void
      */
     public function handle(JobReserved $event)

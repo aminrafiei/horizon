@@ -1,26 +1,26 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Aminrafiei\Horizon\Tests\Feature;
 
 use Mockery;
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\PhpBinary;
-use Laravel\Horizon\AutoScaler;
-use Laravel\Horizon\Supervisor;
+use Aminrafiei\Horizon\PhpBinary;
+use Aminrafiei\Horizon\AutoScaler;
+use Aminrafiei\Horizon\Supervisor;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\WorkerCommandString;
-use Laravel\Horizon\SystemProcessCounter;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\SupervisorCommands\Scale;
+use Aminrafiei\Horizon\MasterSupervisor;
+use Aminrafiei\Horizon\SupervisorOptions;
+use Aminrafiei\Horizon\WorkerCommandString;
+use Aminrafiei\Horizon\SystemProcessCounter;
+use Aminrafiei\Horizon\Tests\IntegrationTest;
+use Aminrafiei\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\SupervisorCommands\Scale;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Events\WorkerProcessRestarting;
+use Aminrafiei\Horizon\Contracts\HorizonCommandQueue;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\Events\WorkerProcessRestarting;
 
 class SupervisorTest extends IntegrationTest
 {

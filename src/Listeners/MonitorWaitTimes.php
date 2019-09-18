@@ -1,19 +1,19 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Aminrafiei\Horizon\Listeners;
 
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\WaitTimeCalculator;
-use Laravel\Horizon\Events\LongWaitDetected;
-use Laravel\Horizon\Events\SupervisorLooped;
-use Laravel\Horizon\Contracts\MetricsRepository;
+use Aminrafiei\Horizon\WaitTimeCalculator;
+use Aminrafiei\Horizon\Events\LongWaitDetected;
+use Aminrafiei\Horizon\Events\SupervisorLooped;
+use Aminrafiei\Horizon\Contracts\MetricsRepository;
 
 class MonitorWaitTimes
 {
     /**
      * The metrics repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\MetricsRepository
+     * @var \Aminrafiei\Horizon\Contracts\MetricsRepository
      */
     public $metrics;
 
@@ -27,7 +27,7 @@ class MonitorWaitTimes
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\MetricsRepository  $metrics
+     * @param  \Aminrafiei\Horizon\Contracts\MetricsRepository  $metrics
      * @return void
      */
     public function __construct(MetricsRepository $metrics)
@@ -38,7 +38,7 @@ class MonitorWaitTimes
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\SupervisorLooped  $event
+     * @param  \Aminrafiei\Horizon\Events\SupervisorLooped  $event
      * @return void
      */
     public function handle(SupervisorLooped $event)

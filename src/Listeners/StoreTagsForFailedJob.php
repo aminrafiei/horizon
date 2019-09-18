@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Aminrafiei\Horizon\Listeners;
 
-use Laravel\Horizon\Events\JobFailed;
-use Laravel\Horizon\Contracts\TagRepository;
+use Aminrafiei\Horizon\Events\JobFailed;
+use Aminrafiei\Horizon\Contracts\TagRepository;
 
 class StoreTagsForFailedJob
 {
     /**
      * The tag repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\TagRepository
+     * @var \Aminrafiei\Horizon\Contracts\TagRepository
      */
     public $tags;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Aminrafiei\Horizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function __construct(TagRepository $tags)
@@ -28,7 +28,7 @@ class StoreTagsForFailedJob
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobFailed  $event
+     * @param  \Aminrafiei\Horizon\Events\JobFailed  $event
      * @return void
      */
     public function handle(JobFailed $event)

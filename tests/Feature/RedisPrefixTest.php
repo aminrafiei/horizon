@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Aminrafiei\Horizon\Tests\Feature;
 
 use Laravel\Facades\Config;
-use Laravel\Horizon\Horizon;
+use Aminrafiei\Horizon\Horizon;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Aminrafiei\Horizon\Tests\IntegrationTest;
 
 class RedisPrefixTest extends IntegrationTest
 {

@@ -1,32 +1,32 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Aminrafiei\Horizon\Listeners;
 
-use Laravel\Horizon\Stopwatch;
-use Laravel\Horizon\Events\JobDeleted;
-use Laravel\Horizon\Contracts\MetricsRepository;
+use Aminrafiei\Horizon\Stopwatch;
+use Aminrafiei\Horizon\Events\JobDeleted;
+use Aminrafiei\Horizon\Contracts\MetricsRepository;
 
 class UpdateJobMetrics
 {
     /**
      * The metrics repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\MetricsRepository
+     * @var \Aminrafiei\Horizon\Contracts\MetricsRepository
      */
     public $metrics;
 
     /**
      * The stopwatch instance.
      *
-     * @var \Laravel\Horizon\Stopwatch
+     * @var \Aminrafiei\Horizon\Stopwatch
      */
     public $watch;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\MetricsRepository  $metrics
-     * @param  \Laravel\Horizon\Stopwatch  $watch
+     * @param  \Aminrafiei\Horizon\Contracts\MetricsRepository  $metrics
+     * @param  \Aminrafiei\Horizon\Stopwatch  $watch
      * @return void
      */
     public function __construct(MetricsRepository $metrics, Stopwatch $watch)
@@ -38,7 +38,7 @@ class UpdateJobMetrics
     /**
      * Stop gathering metrics for a job.
      *
-     * @param  \Laravel\Horizon\Events\JobDeleted  $event
+     * @param  \Aminrafiei\Horizon\Events\JobDeleted  $event
      * @return void
      */
     public function handle(JobDeleted $event)

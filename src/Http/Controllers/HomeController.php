@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Aminrafiei\Horizon\Http\Controllers;
 
 class HomeController extends Controller
 {

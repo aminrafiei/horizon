@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Aminrafiei\Horizon\Console;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\ProcessInspector;
-use Laravel\Horizon\Contracts\ProcessRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\MasterSupervisor;
+use Aminrafiei\Horizon\ProcessInspector;
+use Aminrafiei\Horizon\Contracts\ProcessRepository;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 
 class PurgeCommand extends Command
 {
@@ -27,26 +27,26 @@ class PurgeCommand extends Command
     protected $description = 'Terminate any rogue Horizon processes';
 
     /**
-     * @var \Laravel\Horizon\Contracts\SupervisorRepository
+     * @var \Aminrafiei\Horizon\Contracts\SupervisorRepository
      */
     private $supervisors;
 
     /**
-     * @var \Laravel\Horizon\Contracts\ProcessRepository
+     * @var \Aminrafiei\Horizon\Contracts\ProcessRepository
      */
     private $processes;
 
     /**
-     * @var \Laravel\Horizon\ProcessInspector
+     * @var \Aminrafiei\Horizon\ProcessInspector
      */
     private $inspector;
 
     /**
      * Create a new command instance.
      *
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
-     * @param  \Laravel\Horizon\Contracts\ProcessRepository  $processes
-     * @param  \Laravel\Horizon\ProcessInspector  $inspector
+     * @param  \Aminrafiei\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Aminrafiei\Horizon\Contracts\ProcessRepository  $processes
+     * @param  \Aminrafiei\Horizon\ProcessInspector  $inspector
      * @return void
      */
     public function __construct(
@@ -64,7 +64,7 @@ class PurgeCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Aminrafiei\Horizon\Contracts\MasterSupervisorRepository  $masters
      * @return void
      */
     public function handle(MasterSupervisorRepository $masters)

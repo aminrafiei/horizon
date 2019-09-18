@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fakes;
+namespace Aminrafiei\Horizon\Tests\Feature\Fakes;
 
 use Exception;
-use Laravel\Horizon\Supervisor;
+use Aminrafiei\Horizon\Supervisor;
 
 class SupervisorThatThrowsException extends Supervisor
 {

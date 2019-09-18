@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\Tests;
+namespace Aminrafiei\Horizon\Tests;
 
-use Laravel\Horizon\Horizon;
+use Aminrafiei\Horizon\Horizon;
 use Orchestra\Testbench\TestCase;
 use Illuminate\Queue\WorkerOptions;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\WorkerCommandString;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\TagRepository;
-use Laravel\Horizon\SupervisorCommandString;
+use Aminrafiei\Horizon\WorkerCommandString;
+use Aminrafiei\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\Contracts\TagRepository;
+use Aminrafiei\Horizon\SupervisorCommandString;
 
 abstract class IntegrationTest extends TestCase
 {
@@ -128,7 +128,7 @@ abstract class IntegrationTest extends TestCase
      */
     protected function getPackageProviders($app)
     {
-        return ['Laravel\Horizon\HorizonServiceProvider'];
+        return ['Aminrafiei\Horizon\HorizonServiceProvider'];
     }
 
     /**

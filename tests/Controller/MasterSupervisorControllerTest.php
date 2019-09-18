@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Controller;
+namespace Aminrafiei\Horizon\Tests\Controller;
 
-use Laravel\Horizon\Supervisor;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\Supervisor;
+use Aminrafiei\Horizon\MasterSupervisor;
+use Aminrafiei\Horizon\SupervisorOptions;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 
 class MasterSupervisorControllerTest extends AbstractControllerTest
 {

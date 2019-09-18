@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Aminrafiei\Horizon\Listeners;
 
-use Laravel\Horizon\Events\JobReleased;
-use Laravel\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\Events\JobReleased;
+use Aminrafiei\Horizon\Contracts\JobRepository;
 
 class MarkJobAsReleased
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Aminrafiei\Horizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Aminrafiei\Horizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function __construct(JobRepository $jobs)
@@ -28,7 +28,7 @@ class MarkJobAsReleased
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobReleased  $event
+     * @param  \Aminrafiei\Horizon\Events\JobReleased  $event
      * @return void
      */
     public function handle(JobReleased $event)

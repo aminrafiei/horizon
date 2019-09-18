@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Aminrafiei\Horizon\Console;
 
 use Illuminate\Console\Command;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\ProvisioningPlan;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\MasterSupervisor;
+use Aminrafiei\Horizon\ProvisioningPlan;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 
 class HorizonCommand extends Command
 {
@@ -33,7 +33,7 @@ class HorizonCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Aminrafiei\Horizon\Contracts\MasterSupervisorRepository  $masters
      * @return void
      */
     public function handle(MasterSupervisorRepository $masters)

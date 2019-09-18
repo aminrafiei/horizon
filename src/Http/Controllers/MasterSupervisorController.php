@@ -1,17 +1,17 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Aminrafiei\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 
 class MasterSupervisorController extends Controller
 {
     /**
      * Get all of the master supervisors and their underlying supervisors.
      *
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Aminrafiei\Horizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Aminrafiei\Horizon\Contracts\SupervisorRepository  $supervisors
      * @return \Illuminate\Support\Collection
      */
     public function index(MasterSupervisorRepository $masters,

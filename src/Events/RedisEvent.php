@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Aminrafiei\Horizon\Events;
 
-use Laravel\Horizon\JobPayload;
+use Aminrafiei\Horizon\JobPayload;
 
 class RedisEvent
 {

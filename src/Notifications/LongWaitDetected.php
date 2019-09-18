@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Notifications;
+namespace Aminrafiei\Horizon\Notifications;
 
-use Laravel\Horizon\Horizon;
+use Aminrafiei\Horizon\Horizon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Messages\MailMessage;

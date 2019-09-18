@@ -24,7 +24,7 @@ $appLoader = new class {
 
 // Configure the application...
 $app = $appLoader->createApplication();
-$app->register(Laravel\Horizon\HorizonServiceProvider::class);
+$app->register(Aminrafiei\Horizon\HorizonServiceProvider::class);
 $app['config']->set('queue.default', 'redis');
 
 // Create the worker...

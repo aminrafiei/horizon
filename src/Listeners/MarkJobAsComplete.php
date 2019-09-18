@@ -1,32 +1,32 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Aminrafiei\Horizon\Listeners;
 
-use Laravel\Horizon\Events\JobDeleted;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\TagRepository;
+use Aminrafiei\Horizon\Events\JobDeleted;
+use Aminrafiei\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\Contracts\TagRepository;
 
 class MarkJobAsComplete
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Aminrafiei\Horizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * The tag repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\TagRepository
+     * @var \Aminrafiei\Horizon\Contracts\TagRepository
      */
     public $tags;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Aminrafiei\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Aminrafiei\Horizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function __construct(JobRepository $jobs, TagRepository $tags)
@@ -38,7 +38,7 @@ class MarkJobAsComplete
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobDeleted  $event
+     * @param  \Aminrafiei\Horizon\Events\JobDeleted  $event
      * @return void
      */
     public function handle(JobDeleted $event)

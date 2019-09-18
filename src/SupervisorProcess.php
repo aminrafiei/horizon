@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Aminrafiei\Horizon;
 
 use Closure;
-use Laravel\Horizon\SupervisorCommands\Terminate;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
+use Aminrafiei\Horizon\SupervisorCommands\Terminate;
+use Aminrafiei\Horizon\Contracts\HorizonCommandQueue;
+use Aminrafiei\Horizon\MasterSupervisorCommands\AddSupervisor;
 
 class SupervisorProcess extends WorkerProcess
 {
@@ -19,7 +19,7 @@ class SupervisorProcess extends WorkerProcess
     /**
      * The supervisor process options.
      *
-     * @var \Laravel\Horizon\SupervisorOptions
+     * @var \Aminrafiei\Horizon\SupervisorOptions
      */
     public $options;
 
@@ -44,7 +44,7 @@ class SupervisorProcess extends WorkerProcess
     /**
      * Create a new supervisor process instance.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Aminrafiei\Horizon\SupervisorOptions  $options
      * @param  \Symfony\Component\Process\Process  $process
      * @param  \Closure|null  $output
      * @return void

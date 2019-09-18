@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Connectors;
+namespace Aminrafiei\Horizon\Connectors;
 
 use Illuminate\Support\Arr;
-use Laravel\Horizon\RedisQueue;
+use Aminrafiei\Horizon\RedisQueue;
 use Illuminate\Queue\Connectors\RedisConnector as BaseConnector;
 
 class RedisConnector extends BaseConnector
@@ -12,7 +12,7 @@ class RedisConnector extends BaseConnector
      * Establish a queue connection.
      *
      * @param  array  $config
-     * @return \Laravel\Horizon\RedisQueue
+     * @return \Aminrafiei\Horizon\RedisQueue
      */
     public function connect(array $config)
     {

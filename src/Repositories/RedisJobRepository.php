@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Aminrafiei\Horizon\Repositories;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Support\Arr;
-use Laravel\Horizon\JobPayload;
+use Aminrafiei\Horizon\JobPayload;
 use Illuminate\Support\Collection;
-use Laravel\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\Contracts\JobRepository;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 
 class RedisJobRepository implements JobRepository
@@ -222,7 +222,7 @@ class RedisJobRepository implements JobRepository
      *
      * @param  string  $connection
      * @param  string  $queue
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @return void
      */
     public function pushed($connection, $queue, JobPayload $payload)
@@ -256,7 +256,7 @@ class RedisJobRepository implements JobRepository
      *
      * @param  string  $connection
      * @param  string  $queue
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @return void
      */
     public function reserved($connection, $queue, JobPayload $payload)
@@ -278,7 +278,7 @@ class RedisJobRepository implements JobRepository
      *
      * @param  string  $connection
      * @param  string  $queue
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @return void
      */
     public function released($connection, $queue, JobPayload $payload)
@@ -297,7 +297,7 @@ class RedisJobRepository implements JobRepository
      *
      * @param  string  $connection
      * @param  string  $queue
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @return void
      */
     public function remember($connection, $queue, JobPayload $payload)
@@ -349,7 +349,7 @@ class RedisJobRepository implements JobRepository
     /**
      * Handle the storage of a completed job.
      *
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @param  bool  $failed
      * @return void
      */
@@ -384,7 +384,7 @@ class RedisJobRepository implements JobRepository
     /**
      * Update the retry status of a job's parent.
      *
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @param  bool  $failed
      * @return void
      */
@@ -404,7 +404,7 @@ class RedisJobRepository implements JobRepository
     /**
      * Update the retry status of a job in a retry array.
      *
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @param  array  $retries
      * @param  bool  $failed
      * @return array
@@ -500,7 +500,7 @@ class RedisJobRepository implements JobRepository
      * @param  string  $exception
      * @param  string  $connection
      * @param  string  $queue
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @return void
      */
     public function failed($exception, $connection, $queue, JobPayload $payload)
@@ -533,7 +533,7 @@ class RedisJobRepository implements JobRepository
      *
      * @param  mixed  $pipe
      * @param  string  $key
-     * @param  \Laravel\Horizon\JobPayload  $payload
+     * @param  \Aminrafiei\Horizon\JobPayload  $payload
      * @return void
      */
     protected function storeJobReference($pipe, $key, JobPayload $payload)

@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\SupervisorCommands;
+namespace Aminrafiei\Horizon\SupervisorCommands;
 
-use Laravel\Horizon\Supervisor;
+use Aminrafiei\Horizon\Supervisor;
 
 class Scale
 {
     /**
      * Process the command.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Aminrafiei\Horizon\Supervisor  $supervisor
      * @param  array  $options
      * @return void
      */

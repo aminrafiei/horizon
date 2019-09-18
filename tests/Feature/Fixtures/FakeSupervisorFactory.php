@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fixtures;
+namespace Aminrafiei\Horizon\Tests\Feature\Fixtures;
 
-use Laravel\Horizon\SupervisorFactory;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\Tests\Feature\Fakes\SupervisorWithFakeMonitor;
+use Aminrafiei\Horizon\SupervisorFactory;
+use Aminrafiei\Horizon\SupervisorOptions;
+use Aminrafiei\Horizon\Tests\Feature\Fakes\SupervisorWithFakeMonitor;
 
 class FakeSupervisorFactory extends SupervisorFactory
 {

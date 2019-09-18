@@ -1,21 +1,21 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Aminrafiei\Horizon;
 
 use Closure;
 use Exception;
 use Throwable;
 use Cake\Chronos\Chronos;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Contracts\Pausable;
-use Laravel\Horizon\Contracts\Terminable;
-use Laravel\Horizon\Contracts\Restartable;
+use Aminrafiei\Horizon\Contracts\Pausable;
+use Aminrafiei\Horizon\Contracts\Terminable;
+use Aminrafiei\Horizon\Contracts\Restartable;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Events\MasterSupervisorLooped;
-use Laravel\Horizon\Contracts\SupervisorRepository;
+use Aminrafiei\Horizon\Contracts\HorizonCommandQueue;
+use Aminrafiei\Horizon\Events\MasterSupervisorLooped;
+use Aminrafiei\Horizon\Contracts\SupervisorRepository;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Aminrafiei\Horizon\Contracts\MasterSupervisorRepository;
 use Symfony\Component\Debug\Exception\FatalThrowableError;
 
 class MasterSupervisor implements Pausable, Restartable, Terminable

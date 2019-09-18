@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Aminrafiei\Horizon;
 
 use ReflectionMethod;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Events\JobPushed;
-use Laravel\Horizon\Events\JobDeleted;
-use Laravel\Horizon\Events\JobReleased;
-use Laravel\Horizon\Events\JobReserved;
-use Laravel\Horizon\Events\JobsMigrated;
+use Aminrafiei\Horizon\Events\JobPushed;
+use Aminrafiei\Horizon\Events\JobDeleted;
+use Aminrafiei\Horizon\Events\JobReleased;
+use Aminrafiei\Horizon\Events\JobReserved;
+use Aminrafiei\Horizon\Events\JobsMigrated;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\RedisQueue as BaseQueue;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Commands;
+namespace Aminrafiei\Horizon\Tests\Feature\Commands;
 
-use Laravel\Horizon\MasterSupervisor;
+use Aminrafiei\Horizon\MasterSupervisor;
 
 class FakeMasterCommand
 {

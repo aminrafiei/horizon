@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Aminrafiei\Horizon\Tests\Feature;
 
-use Laravel\Horizon\SupervisorFactory;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Tests\Feature\Fixtures\FakeSupervisorFactory;
+use Aminrafiei\Horizon\SupervisorFactory;
+use Aminrafiei\Horizon\Tests\IntegrationTest;
+use Aminrafiei\Horizon\Tests\Feature\Fixtures\FakeSupervisorFactory;
 
 class SupervisorCommandTest extends IntegrationTest
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Aminrafiei\Horizon;
 
-use Laravel\Horizon\Contracts\JobRepository;
+use Aminrafiei\Horizon\Contracts\JobRepository;
 
 class JobId
 {
