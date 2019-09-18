@@ -43,6 +43,6 @@ class WorkCommand extends BaseWorkCommand
             ignore_user_abort(true);
         }
 
-        parent::handle();
+        parent::fire();
     }
 }

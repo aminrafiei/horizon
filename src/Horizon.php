@@ -2,6 +2,7 @@
 
 namespace Aminrafiei\Horizon;
 
+use Illuminate\Support\Facades\Gate;
 use Closure;
 use Exception;
 
@@ -61,7 +62,7 @@ class Horizon
     public static function check($request)
     {
         return (static::$authUsing ?: function () {
-            return app()->environment('local');
+            return app()->environment('local') || Gate::check('viewHorizon');
         })($request);
     }
 
